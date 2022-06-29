@@ -14,7 +14,7 @@
 # ---
 
 # + [markdown] colab_type="text" id="view-in-github" tags=[]
-# <a href="https://colab.research.google.com/github/sebsteinig/pyGPlates-reconstructions-template/blob/main/notebook_pyGPlates_example.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+# <a href="https://colab.research.google.com/github/sebsteinig/pyGPlates-reconstructions-template/blob/main/pyGPlates_shape-reconstructions_example" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 # -
 
 # # pyGPlates shape reconstructions
@@ -138,4 +138,4 @@ for shapeCount, shapeName in enumerate(files_input_shapes):
         # Reconstruct the shapes
         reconstructed_polyline_feature_geometries = []
         pygplates.reconstruct(partitioned_polygon_feature, rotation_model, output_dir +'/' + shapeName + '_' + ages[ageCount] +'Ma.shp', float(ages[ageCount]) ) 
- 
+
