@@ -49,7 +49,7 @@ if IN_COLAB:
     # %cd {repo}
     
     # install pygplates
-    # !sudo apt install bin/pygplates_0.36.0_py36_ubuntu-18.04-amd64.deb
+    # !sudo apt install ./bin/pygplates_0.36.0_py36_ubuntu-18.04-amd64.deb
     
 # -
 
