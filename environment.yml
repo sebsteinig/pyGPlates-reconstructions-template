@@ -1,0 +1,19 @@
+name: base
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python==3.7
+  - pip
+  - conda
+  - mamba
+  - cartopy=0.18.0
+  - cmocean
+  - numpy
+  - xarray
+  - pyyaml==5.4.1
+  - jupyterlab
+  - pandas
+  - seaborn
+  - flask
+  - jupytext
