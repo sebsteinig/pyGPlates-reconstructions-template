@@ -57,7 +57,7 @@ if IN_COLAB:
 # define variables/lists to quickly change inputs to the notebook
 
 # +
-# input csv file with label, modern latitude, modern longitude
+# input csv file (in data directory) with label, modern latitude, modern longitude
 file_input_sites = 'example_sites.csv'
 
 # list of ages (in Ma) for which we want to reconstruct paleolocations for the input sites
@@ -105,7 +105,7 @@ rotation_model=pygplates.RotationModel('PALEOMAP_Global_Plate_Model/PALEOMAP_Pla
 
 # +
 # load point coordinates
-df_sites = pd.read_csv(file_input_sites,sep=',')
+df_sites = pd.read_csv('data/' + file_input_sites,sep=',')
 
 for ageCount, age in enumerate(ages):
     

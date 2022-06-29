@@ -108,7 +108,7 @@ rotation_model=pygplates.RotationModel('PALEOMAP_Global_Plate_Model/PALEOMAP_Pla
 for shapeCount, shapeName in enumerate(files_input_shapes):
     
     # load shapes coordinates
-    df_shape = pd.read_csv('./'+ shapeName +'.csv',sep=',')
+    df_shape = pd.read_csv('data/'+ shapeName +'.csv',sep=',')
     
     for ageCount, age in enumerate(ages):
 
