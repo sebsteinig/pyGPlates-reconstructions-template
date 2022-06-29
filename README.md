@@ -1,18 +1,13 @@
-# boilerplate python notebook template
-This repo should contain all documentation, scripts and data to recreate the final figure/analysis from the source data. Final analysis and plotting is done in jupyter notebooks with a python kernel for interactive analysis of the source or preprocessed data and inline documentation. 
+# pyGPlates python notebooks 
 
 ## purpose
-What do I want to do?
+Reconstruct paleolocations of present-day locations and shapes across the Phanerozoic. [PyGplates](https://www.gplates.org/docs/pygplates/) allows to use some of the functionality of the GUI [GPlates](https://www.gplates.org/) software within python scripts. This allows scripting to automatically process many different locations and/or time periods. Different [rotation models](http://portal.gplates.org/portal/rotation_models/) can be used and are easily exchangeable. I currently use the [PALEOMAP](https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/) rotation model that is consistent to the Bristol [Scotese simulations](https://cp.copernicus.org/articles/17/1483/2021/) by Paul Valdes. 
 
-## source data
-Some external, static data that builds the starting point of the analysis (e.g model output, CMIP archive, OPeNDAP server, ...) 
-
-## preprocessing
-Large source data should be preprocessed before importing into the jupyter notebook (e.g., regridding, averaging, ...) to speed up interactive analysis and to allow distribution via github (100 MB file size limit). Put the preprocessing script into this repo and describe what you have done with the source data
+## input data
+Present-day locations for `pygplates_paleolocations.ipynb` need to be defined in a CSV file (name, lat, lon) as shown in the example file `inpt_sites.csv`. When reconstructing shapes (e.g. a country outline) with `pygplates_paleoshapes.ipynb` each shape needs to be defined in a separate CSV file (name, lat, lon) with the points describing the modern outline of the shape. We also need to specify the location of the chosen plate model files, e.g. 'data/PALEOMAP_Global_Plate_Model' ([download link](https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/)). 
 
 ## running the notebooks
 Notebooks can either be run on [Google Colab](https://colab.research.google.com/) (online, Google account required) or locally. Notebooks should include a button to open it in Colab, otherwise you can also directly load a GitHub repo within Colab. Easiest way to run locally is to first download the repo with
-
 
 ```
 git clone https://github.com/USERNAME/REPOSITORY
