@@ -158,9 +158,3 @@ for ageCount, age in enumerate(ages):
         
             # write data to CSV
             output_writer.writerow([df_sites.name[siteCount], df_sites.LAT[siteCount], df_sites.LON[siteCount], round(paleoLocation[0],2), round(paleoLocation[1],2), ages[ageCount]])  
-
-# -
-
-
-
-
