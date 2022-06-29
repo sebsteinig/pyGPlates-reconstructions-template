@@ -14,7 +14,7 @@
 # ---
 
 # + [markdown] colab_type="text" id="view-in-github" tags=[]
-# <a href="https://colab.research.google.com/github/sebsteinig/pyGPlates-reconstructions-template/blob/main/pyGPlates_shape-reconstructions_example" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+# <a href="https://colab.research.google.com/github/sebsteinig/pyGPlates-reconstructions-template/blob/main/pyGPlates_shape-reconstructions_example.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 # -
 
 # # pyGPlates shape reconstructions
